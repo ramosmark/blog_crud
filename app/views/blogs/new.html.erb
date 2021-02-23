@@ -1,0 +1,8 @@
+<h3>Create Blog</h3>
+<%= form_with model: @blog do |form| %>
+    <%= form.text_area :title, placeholder: "title" %>
+    <%= form.text_area :content, placeholder: "content" %>
+    <%= form.text_area :author, placeholder: "author" %>
+
+    <%= form.submit 'Save Blog'%>
+<% end %>
